@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    
+        <meta charset="utf-8">
+        <script src="js/jquery-3.4.1.min.js"></script>
+        <script src="bootstrap-3.4.1-dist/js/bootstrap.js"></script>
+        <link href="bootstrap-3.4.1-dist/css/bootstrap.css" type="text/css" rel="stylesheet">
+             
+    </head>
+    
+    <body>
+         <div class="container">
+               <form id="frmPeliculas" method="post">
+                   <div class="panel panel-primary">
+                    
+                       <div class="panel-heading">
+                       
+                            <h2 class="panel-title">Catalogo de Pedidos</h2>
+                       
+                       </div> 
+                       
+                       <div class="panel-body">
+                           <table id="tablaPeliculas" class="table table-bordered table-hover">
+                           
+                            <thead>
+                            <tr>
+                                <th>Numero Pedido</th>
+                                <th>Tipo Pastel</th>
+                                <th>Costo</th>
+                                <th>Enviar a (Direccion)</th>
+                                <th>Cliente</th>
+                            </tr>
+                        </thead>  
+                                <tbody>
+                        
+                            
+                        
+                                </tbody>
+                               
+                           </table>
+                        <button type="button" id="new" class="btn btn-primary" data-toggle="modal" data-target="#nuevo">Nuevo Pedido</button>
+                        <button type="button" id="modificar" class="btn btn-warning" data-toggle="modal" data-target="#nuevo">Editar Pedido</button>
+                        <button type="button" id="eliminar" class="btn btn-danger">Eliminar</button>
+                       </div>
+                       
+                   </div>
+                   
+                    <!--Ventana Modal-->
+                <div id="nuevo" class="modal fade">
+                    <div class="modal-dialog modal-lg">
+                        <div class="modal-content">
+                            <div class="panel panel-success">
+                                <div class="panel-heading">
+                                    <h2 class="panel-title">Registrar Pedido</h2>
+                                </div>
+                                <div class="panel-body">
+                                    <div class="form-group">
+                                        <label>Tipo de pastel</label>
+                                        <input type="hidden" name="idp" id="idp">
+                                        <input type="text" class="form-control" name="tipo" id="tipo" placeholder="Escribe el tipo de pastel">
+                                    </div>
+                                    <div class="form-group">
+                                        <label>Dirección</label>
+                                        <input type="text" class="form-control" name="direccion" id="direccion" placeholder="Escribe direccion de entrega">
+                                    </div>
+                                    <div class="form-group">
+                                        <label>Telefono</label>
+                                        <input type="text" class="form-control" name="telefono" id="telefono" placeholder="Escribe Telefono de Contacto">
+                                    </div>
+                                    <div class="form-group">
+                                        <label>Cantidad</label>
+                                        <input type="text" class="form-control" name="cantidad" id="cantidad" placeholder="Escribe la Cantidad de Pasteles">
+                                    </div>
+                                    <div class="form-group">
+                                        <label>Correo Electronico</label>
+                                        <input type="text" class="form-control" name="correo" id="correo" placeholder="Escribe Correo de Contacto">
+                                    </div>
+                                    <div class="form-group">
+                                        <label>Fecha de Entrega</label>
+                                        <input type="text" class="form-control" name="fecha" id="fecha" placeholder="Escribe la Fecha de entrega">
+                                    </div>
+                                </div>
+                                <div class="panel-footer">
+                                    <button class="btn btn-success btn-lg" id="guardarPastel" type="button">Guardar</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                  
+               </form>
+        </div>
+       
+                          
+                
+    </body>
+</html>       

@@ -1,0 +1,385 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    position: relative;
+    background: linear-gradient(to right, #F27121, #E94057, #8A2387);
+    height: auto;
+    width: 100%;
+    padding: 2em 0em 0em 0em;
+}
+
+nav {
+    position: fixed;
+    z-index: 10;
+    color: white;
+}
+
+.contain {
+    width: 100%;
+    max-width: 1200px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin: auto;
+}
+
+.img {
+    display: block;
+    height: 350px;
+    object-fit: cover;
+    width: auto;
+    animation: moverizqimg 1.5s ease;
+}
+
+.textos {
+    width: 50%;
+    color: white;
+}
+
+.textos h1 {
+    /*Tamaño de la Fuente de H1*/
+    font-size: 40px;
+    animation: moverder 1.5s ease;
+}
+
+.textos h2 {
+    /*Tamaño de la Fuente de H2*/
+    font-size: 15px;
+    animation: moverder 2s ease;
+}
+
+.wave {
+    position: absolute;
+    width: 100%;
+    height: 60px;
+    bottom: 0%;
+    left: 0%;
+    background: url(..//images/Banner/wave.png);
+    animation: animate 10s linear infinite;
+}
+
+.wave:before {
+    content: '';
+    width: 100%;
+    height: 60px;
+    position: absolute;
+    background: url(..//images/Banner/wave.png);
+    top: 0%;
+    left: 0%;
+    opacity: 0.5;
+    animation: animate-reverse 10s linear infinite;
+}
+
+body {
+    font-family: 'Quicksand', sans-serif;
+    background-color: white;
+    margin: 0;
+    padding: 0;
+}
+
+.card {
+    display: flex;
+    margin: 10px;
+    box-shadow: inset 0px 0px 50px rgba(255, 0, 255, 0.3), 5px 8px 8px rgba(255, 0, 255, 0.3);
+}
+
+body aside {
+    display: inline-flex;
+}
+
+body .T1 {
+    margin: 0 0 3% 0;
+}
+
+.card div {
+    text-align: center;
+}
+
+.bd-example {
+    padding: 0% 10% 0% 10%;
+}
+
+.btn {
+    background: linear-gradient(to right, #6441a5, #2a0845);
+    color: white;
+}
+
+.btn:hover {
+    background: linear-gradient(to left, #6441a5, #2a0845);
+    color: white;
+}
+
+.T1 {
+    text-align: center;
+    padding: 5% 0 5px 0;
+    color: orangered;
+}
+
+.T2 {
+    text-align: left;
+    padding: 5% 0 1% 5%;
+    color: orangered;
+}
+
+.image {
+    display: flex;
+    height: 430px;
+    object-fit: cover;
+    width: auto;
+    box-shadow: inset 10px 10px 50px rgba(255, 0, 0, 0.2), 0px 0px 50px rgba(255, 0, 0, 0.2);
+    border-radius: 15px;
+}
+
+main {
+    display: inline-flex;
+}
+
+aside {
+    margin: 0 5% 0 0;
+}
+
+.contains h2 {
+    font-size: 20px;
+}
+
+.grupo {
+    display: inline-flex;
+    margin: 4.6%;
+}
+
+.grupo section .Sinopsis {
+    margin: 0 0 5% 0;
+    width: 55em;
+    height: auto;
+}
+
+.grupo section .Lista {
+    margin: 0 0 1% 0;
+    padding: 0 40% 0 0;
+    width: 55em;
+    height: auto;
+}
+
+.grupo section .Lista .btn {
+    background: linear-gradient(to right, #ff0099, #493240);
+    color: white;
+}
+
+.grupo section .Lista .btn:hover {
+    background: linear-gradient(to left, #ff0099, #493240);
+    color: white;
+}
+
+.grupo section h2 {
+    color: orangered;
+}
+
+.grupo section p {
+    color: black;
+    margin: 2% 5% 2% 0%;
+}
+
+.grupo section h3 {
+    color: orangered;
+    margin: 2% 5% 2% 0%;
+}
+
+.grupo section ul li {
+    display: flex;
+    padding: 10px 10px 10px 10px;
+    color: white;
+    margin: 5px;
+    background: linear-gradient(to right, #ff0099, #493240);
+}
+
+.grupo section ul li span:nth-child(1) {
+    width: 65px;
+}
+
+.grupo section ul li span:nth-child(2) {
+    width: 310px;
+}
+
+.grupo section ul li:hover {
+    transform: scale(1.06);
+    background: linear-gradient(to right, #ff0085, #491240);
+}
+
+.contains p {
+    font-size: 12px;
+}
+
+.contains {
+    max-width: auto;
+    display: inline-table;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 0% 1% 4% 2%;
+}
+
+.carta {
+    position: relative;
+    margin: 10px;
+    width: 262px;
+    height: 392px;
+    background: white;
+    transform-style: preserve-3d;
+    transform: perspective(2000px);
+    transition: 1s;
+    box-shadow: inset 5px 0 5px rgba(255, 0, 255, 0.4), 0 10px 20px rgba(255, 0, 255, 0.4);
+}
+
+.carta:hover {
+    z-index: 1000;
+    transform: perspective(2000px) rotate(-10deg);
+    box-shadow: inset -300px 0 5px rgba(255, 0, 255, 0), 0 0 5px rgba(255, 0, 255, 0.1);
+}
+
+.carta .imgBox {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    border: 1px solid #000;
+    box-sizing: border-box;
+    transform-origin: left;
+    z-index: 1;
+    transition: 1s;
+    object-fit: cover;
+}
+
+.carta:hover .imgBox {
+    transform: rotateY(-135deg);
+}
+
+.carta .details h2 {
+    color: orangered;
+}
+
+.carta .imgBox .img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.carta .details {
+    position: absolute;
+    top: 0;
+    left: 0;
+    box-sizing: border-box;
+    padding: 20px;
+}
+
+footer {
+    position: relative;
+    background: linear-gradient(to right, #F27121, #E94057, #8A2387);
+    height: auto;
+    width: auto;
+    margin: 5% 0 0 0;
+}
+
+footer .wavef {
+    margin: 5% 0 0 0;
+}
+
+.contain2 {
+    width: 100%;
+    max-width: auto;
+    display: flex;
+    align-items: center;
+    padding: 2em 0em 2em 0em;
+}
+
+.textos2 {
+    width: 100%;
+    color: white;
+    text-align: center;
+}
+
+.textos2 h1 {
+    /*Tamaño de la Fuente de H1*/
+    font-size: 30px;
+}
+
+.textos2 h2 {
+    /*Tamaño de la Fuente de H1*/
+    font-size: 15px;
+}
+
+.wavef {
+    position: relative;
+    width: 100%;
+    height: 60px;
+    bottom: 0%;
+    left: 0%;
+    background: url(..//images/Banner/wavef.png);
+    animation: animate 10s linear infinite;
+}
+
+.wavef:before {
+    content: '';
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background: url(..//images/Banner/wavef.png);
+    top: 0;
+    left: 0;
+    opacity: 0.5;
+    animation: animate-reverse 10s linear infinite;
+}
+
+@keyframes animate {
+    0% {
+        background-position: 0;
+    }
+    100% {
+        background-position: 1360px;
+    }
+}
+
+@keyframes animate-reverse {
+    0% {
+        background-position: 1360px;
+    }
+    100% {
+        background-position: 0;
+    }
+}
+
+@keyframes moverder {
+    0% {
+        opacity: 0;
+        transform: translateX(-100px);
+    }
+    100% {
+        opacity: 1;
+        transform: translate(0);
+    }
+}
+
+@keyframes moverizqimg {
+    0% {
+        opacity: 0;
+        transform: translateX(100px);
+    }
+    100% {
+        opacity: 1;
+        transform: translate(0);
+    }
+}
+
+@keyframes moverarriba {
+    0% {
+        opacity: 0;
+        transform: translateY(100px);
+    }
+    100% {
+        opacity: 1;
+        transform: translate(0);
+    }
+}
